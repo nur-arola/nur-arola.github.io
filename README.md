@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Nur Mohammad Arola</h1>
 <h3 align="center">An aspiring data analyst from the Philippines.</h3>
 
-- 👨‍💻 All of my projects are available at [https://github.com/neilangelomartinez](https://github.com/neilangelomartinez)
+- 👨‍💻 All of my projects are available at [https://nurmohammadarola.github.io/](https://nurmohammadarola.github.io/)
 
 - 📫 How to reach me **nur.arola01@gmail.com**
 
