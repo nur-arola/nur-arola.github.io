@@ -1059,3 +1059,39 @@ visibility: hidden;
 display: none;
 }
 
+/** 
+* TOOLS
+*/
+
+.tools-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px;
+  padding: 0;
+}
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Adjust space between icon and text */
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon-wrapper i {
+  font-size: 2rem; /* Adjust icon size as needed */
+}
+
+.icon-label {
+  font-weight: bold;
+  margin-right: 20px; /* Space between label and description */
+}
+
+.icon-description {
+  font-size: 1.23rem;
+  color: var(--gray); /* Use your preferred color for the description text */
+}
