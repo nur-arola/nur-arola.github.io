@@ -1095,3 +1095,31 @@ display: none;
   font-size: 1.23rem;
   color: var(--gray); /* Use your preferred color for the description text */
 }
+
+/*new botton when scrol down*/
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Adjust text size */
+  display: flex;
+  align-items: center;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+}
+
+#scrollToTopBtn:hover {
+  color: #ffd700; /* Change text color on hover */
+}
+

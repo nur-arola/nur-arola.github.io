@@ -42,9 +42,13 @@
   -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
   <!--
+    - Transition
+  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--
     - grid style for portfolio
   -->
-
+  
 </head>
 
 <body>
@@ -119,7 +123,7 @@
 
           <div class="hero-content">
 
-            <h1 class="h1 hero-title">Nur Mohammad Arola</h1>
+            <h1 class="h1 hero-title" >Nur Mohammad Arola</h1>
             <p class="hero-subtitle">
               Data Analyst
             </p>
@@ -132,9 +136,10 @@
             </p>
 
             <a href="https://drive.google.com/file/d/1aHGRmOXTZcvpfrwcMkdIHQyaKT2hzKh_/view?usp=sharing" target="_blank" class="btn has-before">
-              <span class="span">Download CV</span>
+              <span class="span" data-aos="slide-left"  data-aos-duration="1000" data-aos-once="false" > <!--Transition-->
+                Download CV</span>
 
-              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="download-outline" aria-hidden="true"  data-aos="slide-down" data-aos-duration="1000" data-aos-once="false"> <!--Transition--> </ion-icon>
             </a>
 
           </div>
@@ -147,7 +152,7 @@
       -->
 
       <section class="section skills" aria-label="our skills">
-        <div id="about" class="container">
+        <div id="about" class="container" data-aos="fade-in" data-aos-duration="1000" data-aos-once="false" > <!--Transition-->
 
           <p class="section-subtitle">Data-Driven and Dedicated</p>
 
@@ -166,7 +171,7 @@
                 actionable insights and make a significant impact in the field.
               </p>
 
-              <a href="https://www.linkedin.com/in/nur-mohammad-arola/" class="btn has-before">LinkedIn Profile</a>
+              <a href="https://www.linkedin.com/in/nur-mohammad-arola/" class="btn has-before"data-aos="slide-right"  data-aos-duration="1000" data-aos-once="false" > <!--Transition-->LinkedIn Profile</a>
             </div>
 
             <div>
@@ -223,7 +228,7 @@
 
       <section class="portfolio" aria-labelledby="portfolio-label">
 
-        <div id="portfolio" class="title-wrapper container">
+        <div id="portfolio" class="title-wrapper container" data-aos="fade-in"  data-aos-duration="3000" data-aos-once="false" > <!--Transition-->
           
           <div>
             <p class="section-subtitle" id="portfolio-label">Data Analysis and Visualization</p>
@@ -237,7 +242,7 @@
 
         </div>
 
-        <div class="tabs">
+        <div class="tabs" data-aos="slide-up"  data-aos-duration="1000" data-aos-once="false" > <!--Transition-->
           <div class="tab selected" data-category="category1">Power BI</div>
           <div class="tab" data-category="category2">Python</div>
           <div class="tab" data-category="category3">SQL</div>
@@ -262,7 +267,7 @@
             </div>
           </li>-->
 
-          <li class="image-grid">
+          <li class="image-grid"> 
             <div class="portfolio-card img-holder" style="--width: 800; --height: 450;">
 
               <img src="./assets/images/7Project.png" width="800" height="450" loading="lazy" alt="portfolio" data-category="category2"
@@ -287,7 +292,7 @@
 
           
 
-          <li class="image-grid">
+          <li class="image-grid" > <!--Transition-->
             <div class="portfolio-card img-holder" style="--width: 800; --height: 450;">
 
               <img src="./assets/images/portfolio10.png" width="800" height="450" loading="lazy" alt="portfolio" data-category="category2" class="img-cover">
@@ -452,7 +457,7 @@
               </div>
             </li> 
 
-            <li class="image-grid">
+            <li class="image-grid" > 
               <div class="portfolio-card img-holder" style="--width: 800; --height: 450;">
 
                 <img src="./assets/images/2Project.png" width="800" height="450" loading="lazy" alt="portfolio" data-category="category3"
@@ -472,7 +477,7 @@
               </div>
             </li>
 
-            <li class="image-grid">
+            <li class="image-grid"> 
               <div class="portfolio-card img-holder" style="--width: 800; --height: 450;">
 
                 <img src="./assets/images/6Project.png" width="800" height="450" loading="lazy" alt="portfolio" data-category="category3"
@@ -545,7 +550,7 @@
 
           </div>
 
-          <div class="slider" data-slider>
+          <div class="slider">
 
             <ul class="slider-container service-list" data-slider-container>
 
@@ -746,7 +751,7 @@
 
 
             <li>
-              <div class="blog-card">
+              <div class="blog-card" > <!--Transition-->
 
                 <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
                   <img src="./assets/images/cert3.png" width="700" height="470" loading="lazy"
@@ -785,7 +790,7 @@
 
 
              <li>
-              <div class="blog-card">
+              <div class="blog-card"> <!--Transition-->
 
                 <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
                   <img src="./assets/images/cert1.png" width="700" height="470" loading="lazy"
@@ -822,7 +827,7 @@
             </li> 
 
             <li>
-              <div class="blog-card">
+              <div class="blog-card" > <!--Transition-->
 
                 <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
                   <img src="./assets/images/cert2.png" width="700" height="470" loading="lazy"
@@ -947,6 +952,39 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--transition-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+   <!-- Existing body content here -->
+
+
+   <button id="scrollToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i> Top
+  </button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+          scrollToTopBtn.style.display = 'block';
+        } else {
+          scrollToTopBtn.style.display = 'none';
+        }
+      });
+
+      scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
