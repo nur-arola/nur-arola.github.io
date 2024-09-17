@@ -34,7 +34,7 @@
 
   <!--
     - custom css link
-  -->
+  -->  
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!--
@@ -137,7 +137,7 @@
             </p>
 
             <a href="https://drive.google.com/file/d/1-7Gy4DeSfD7xeDA4ecikf0DNgfc5Fter/view?usp=sharing" target="_blank" class="btn has-before">
-              <span class="span" data-aos="slide-left"  data-aos-duration="1000" data-aos-once="true" > <!--Transition-->
+              <span class="span" data-aos="fade-down" data-aos-duration="500" data-aos-once="true" > <!--Transition-->
                 Download CV</span>
 
               <ion-icon name="download-outline" aria-hidden="true"  data-aos="slide-down" data-aos-duration="1000" data-aos-once="true"> <!--Transition--> </ion-icon>
@@ -152,7 +152,10 @@
         - #SKILLS set
       -->
 
-      <section class="section skills" aria-label="our skills">
+      <section class="section skills" aria-label="our skills" style="
+      padding-bottom: 20px;
+      padding-top: 20px;
+  ">
         <div id="about" class="container" data-aos="fade-in" data-aos-duration="500" data-aos-once="true" > <!--Transition-->
 
           <p class="section-subtitle">Data-Driven and Dedicated</p>
@@ -175,47 +178,84 @@
               <a href="https://www.linkedin.com/in/nur-mohammad-arola/" class="btn has-before"data-aos="slide-right"  data-aos-duration="1000" data-aos-once="true" > <!--Transition-->LinkedIn Profile</a>
             </div>
 
-            <div data-aos="fade-in" data-aos-duration="500"  data-aos-once="true">
+
+
+            <div data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
               <ul class="tools-list">
-                <li>
-                  <div class="icon-wrapper">
-                    <i class="fab fa-microsoft"></i> <!-- SQL -->
-                    <p class="icon-label"style="
-                    margin-right: 30px;
-                ">MSSQL</p>
-                    <p class="icon-description">A relational database management system for efficient data storage, manipulation, and complex querying.</p>
-                  </div>
-                </li>
-            
-                <li>
-                  <div class="icon-wrapper">
-                    <i class="fas fa-chart-bar"></i> <!-- Power BI -->
-                    <p class="icon-label">PowerBI</p>
-                    <p class="icon-description">A business analytics tool for creating interactive dashboards and sharing data insights.</p>
-                  </div>
-                </li>
-            
-                <li>
+                <li class="tool-item">
                   <div class="icon-wrapper">
                     <i class="fab fa-python"></i> <!-- Python -->
-                    <p class="icon-label"style="
-                    margin-right: 35px;
-                ">Python</p>
-                    <p class="icon-description">Uses Pandas, Matplotlib, and Numpy for data manipulation, plotting, and numerical operations.</p>
+                    <span class="icon-label">Python</span>
                   </div>
+                  <p class="icon-description"></p>
                 </li>
-            
-                <li>
+              
+                <li class="tool-item">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-chart-bar"></i> <!-- Power BI -->
+                    <span class="icon-label">Power BI</span>
+                  </div>
+                  <p class="icon-description"></p>
+                </li>
+              
+                <li class="tool-item">
                   <div class="icon-wrapper">
                     <i class="fas fa-table"></i> <!-- Excel -->
-                    <p class="icon-label" style="
-                    margin-right: 50px;
-                ">Excel</p>
-                    <p class="icon-description">A spreadsheet application for data analysis, visualization, and complex calculations.</p>
+                    <span class="icon-label">Excel</span>
                   </div>
+                  <p class="icon-description"></p>
+                </li>
+              
+                <li class="tool-item">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-cogs"></i> <!-- VBA -->
+                    <span class="icon-label">VBA</span>
+                  </div>
+                  <p class="icon-description"></p>
+                </li>
+              
+                <li class="tool-item">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-database"></i> <!-- SQL -->
+                    <span class="icon-label">SQL</span>
+                  </div>
+                  <p class="icon-description"></p>
+                </li>
+              
+                <li class="tool-item">
+                  <div class="icon-wrapper">
+                    <i class="fab fa-laptop-code"></i> <!-- Matlab -->
+                    <span class="icon-label">Vs Code</span>
+                  </div>
+                  <p class="icon-description"></p>
+                </li>
+              
+                <li class="tool-item">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-chart-line"></i> <!-- Tableau -->
+                    <span class="icon-label">Tableau</span>
+                  </div>
+                  <p class="icon-description"></p>
+                </li>
+              
+                <li class="tool-item">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-code"></i> <!-- C++ -->
+                    <span class="icon-label">C++</span>
+                  </div>
+                  <p class="icon-description"></p>
+                </li>
+
+                <li class="tool-item">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-project-diagram"></i> <!-- C++ -->
+                    <span class="icon-label">Matlab</span>
+                  </div>
+                  <p class="icon-description"></p>
                 </li>
               </ul>
-            </div>
+              
+</div>
             
 
           </div>
@@ -244,14 +284,16 @@
 
         </div>
 
-        <div class="tabs" data-aos="slide-up"  data-aos-duration="300" data-aos-once="false" > <!--Transition-->
+        <div class="tabs" data-aos="slide-up"  data-aos-duration="300" data-aos-once="false==" > <!--Transition-->
           <div class="tab selected" data-category="category1">Power BI</div>
           <div class="tab" data-category="category2">Python</div>
           <div class="tab" data-category="category3">SQL</div>
           <div class="tab" data-category="category4">Excel</div>
         </div>
-        
 
+
+
+        <ul class="portfolio-container"style="padding-bottom: 20px;" data-aos="slide-up"  data-aos-duration="500" data-aos-once="true" > 
           <li class="image-grid"> 
             <div class="portfolio-card img-holder" style="--width: 800; --height: 450;">
 
@@ -259,7 +301,7 @@
               class="img-cover" style="
               width: 800px;
               height: 450px;
-          ">
+           ">
 
               <div class="card-content">
                 <h3 class="h3 card-title">Data Cleaning and Analysis Project with Pandas</h3>
@@ -447,6 +489,11 @@
 
               </div>
             </li>
+          </ul>
+          <div class="portfolio-navigation">
+            <button class="nav-button left-button" data-aos="slide-left"  data-aos-duration="500" data-aos-once="true" > &lt;</button> <!-- Left Navigation Button -->
+            <button class="nav-button right-button"data-aos="slide-right"  data-aos-duration="500" data-aos-once="true"> &gt;</button> <!-- Right Navigation Button -->
+        </div>
         </div>
 
         <script>
@@ -481,9 +528,9 @@
       -->
 
       <section class="service" aria-labelledby="service-label" data-slider>
-        <div class="container">
+        <div class="container" >
 
-          <div class="title-wrapper">
+          <div class="title-wrapper"data-aos="fade-in" data-aos-duration="500" data-aos-once="true" > <!--Transition-->
 
             <div>
               <p class="section-subtitle">
@@ -501,7 +548,7 @@
 
           </div>
 
-          <div class="slider" data-slider>
+          <div class="slider" data-slider data-aos="fade-in" data-aos-duration="500" data-aos-once="true" > <!--Transition-->
 
             <ul class="slider-container service-list" data-slider-container>
 
@@ -653,21 +700,21 @@
       <section class="section blog" aria-labelledby="blog-label">
         <div id="blog" class="container">
 
-          <p class="section-subtitle" id="blog-label">Recent Articles</p>
+          <p class="section-subtitle" id="blog-label" data-aos="fade-in" data-aos-duration="500" data-aos-once="true" > <!--Transition-->Recent Articles</p>
 
-          <h2 class="h2 section-title">Achievements</h2>
+          <h2 class="h2 section-title"data-aos="fade-in" data-aos-duration="500" data-aos-once="true" > <!--Transition-->Achievements</h2>
 
           <ul class="blog-list">
 
             <li>
-              <div class="blog-card">
+              <div class="blog-card" data-aos="fade-left" data-aos-duration="700" data-aos-once="true" > <!--Transition-->
 
                 <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
                   <img src="./assets/images/cert5.png" width="700" height="470" loading="lazy"
                     alt="Power Platform" class="img-cover">
                 </figure>
 
-                <div class="card-content">
+                <div class="card-content" >
 
                   <time class="time" datetime="2024-21-07">
                     <span class="span text-lg">06</span>
@@ -700,7 +747,7 @@
 
 
             <li>
-              <div class="blog-card">
+              <div class="blog-card" data-aos="fade-right" data-aos-duration="700" data-aos-once="true" > <!--Transition-->
 
                 <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
                   <img src="./assets/images/cert4.png" width="700" height="470" loading="lazy"
@@ -742,7 +789,7 @@
 
 
             <li>
-              <div class="blog-card" > <!--Transition-->
+              <div class="blog-card" data-aos="fade-left" data-aos-duration="700" data-aos-once="true" > <!--Transition--> <!--Transition-->
 
                 <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
                   <img src="./assets/images/cert3.png" width="700" height="470" loading="lazy"
@@ -781,7 +828,7 @@
 
 
              <li>
-              <div class="blog-card"> <!--Transition-->
+              <div class="blog-card" data-aos="fade-right" data-aos-duration="700" data-aos-once="true" > <!--Transition--><!--Transition-->
 
                 <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
                   <img src="./assets/images/cert1.png" width="700" height="470" loading="lazy"
@@ -818,7 +865,7 @@
             </li> 
 
             <li>
-              <div class="blog-card" > <!--Transition-->
+              <div class="blog-card" data-aos="fade-left" data-aos-duration="700" data-aos-once="true" > <!--Transition--> <!--Transition-->
 
                 <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
                   <img src="./assets/images/cert2.png" width="700" height="470" loading="lazy"
@@ -976,6 +1023,35 @@
       });
     });
   </script>
+
+
+   <!--Navigation button for project -->
+<script>
+  // Select the portfolio container and navigation button
+  const portfolioContainer = document.querySelector('.portfolio-container');
+  const leftButton = document.querySelector('.left-button');
+  const rightButton = document.querySelector('.right-button');
+
+  // Set the amount to scroll (you can adjust the value)
+  const scrollAmount = 1000; // Adjust the value based on your preference
+
+  // Scroll left function
+  leftButton.addEventListener('click', () => {
+    portfolioContainer.scrollBy({
+      left: -scrollAmount, // Scroll left
+      behavior: 'smooth' // Smooth scrolling
+    });
+  });
+
+  // Scroll right function
+  rightButton.addEventListener('click', () => {
+    portfolioContainer.scrollBy({
+      left: scrollAmount, // Scroll right
+      behavior: 'smooth' // Smooth scrolling
+    });
+  });
+</script>
+
   
 </body>
 
