@@ -1100,6 +1100,14 @@ display: none;
   color: var(--gray); /* Use your preferred color for the description text */
 }
 
+.tools-title {
+  color: #ffffff; /* Change this to your desired color */
+  font-size: 1.8rem; /* Adjust font size if needed */
+  font-weight: bold; /* Make the title bold */
+  margin-bottom: 20px; /* Add some space below the title */
+}
+
+
 /* Responsive design */
 @media (max-width: 768px) {
   .tool-item {
